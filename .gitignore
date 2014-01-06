@@ -1,0 +1,24 @@
+## Patterns relating to development in C.
+# Object files
+*.o
+
+# Libraries
+*.lib
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+
+# Executables
+*.exe
+*.out
+
+## Patterns relating to Apple Xcode
+# Build folders
+build/
+DerivedData/
+
+# Exclude per-user settings
+UserInterface.xcuserstate
+*.xcuserdatad/
+.lastrelease
