@@ -19,6 +19,7 @@
 		7918C84C187E2734006D7FE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7918C84A187E2734006D7FE2 /* InfoPlist.strings */; };
 		7918C84E187E2734006D7FE2 /* WeatherLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918C84D187E2734006D7FE2 /* WeatherLogTests.m */; };
 		7918C87E187FC6D5006D7FE2 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918C87D187FC6D5006D7FE2 /* CHCSVParser.m */; };
+		7918C885187FC7B4006D7FE2 /* Yuba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918C884187FC796006D7FE2 /* Yuba.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7918C81F187E2734006D7FE2;
 			remoteInfo = WeatherLog;
+		};
+		7918C883187FC796006D7FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7918C87F187FC796006D7FE2 /* Yuba.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Yuba;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +62,7 @@
 		7918C858187E4FC6006D7FE2 /* update_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_version.sh; sourceTree = "<group>"; };
 		7918C87C187FC6D5006D7FE2 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		7918C87D187FC6D5006D7FE2 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		7918C87F187FC796006D7FE2 /* Yuba.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Yuba.xcodeproj; path = ../Library/Yuba/Yuba.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918C885187FC7B4006D7FE2 /* Yuba.framework in Frameworks */,
 				7918C824187E2734006D7FE2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +182,7 @@
 		7918C87A187FC6BB006D7FE2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7918C87F187FC796006D7FE2 /* Yuba.xcodeproj */,
 				7918C87B187FC6D5006D7FE2 /* CHCSVParser */,
 			);
 			name = Libraries;
@@ -185,6 +196,14 @@
 			);
 			name = CHCSVParser;
 			path = ../Library/CHCSVParser/CHCSVParser;
+			sourceTree = "<group>";
+		};
+		7918C880187FC796006D7FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7918C884187FC796006D7FE2 /* Yuba.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +271,12 @@
 			mainGroup = 7918C817187E2733006D7FE2;
 			productRefGroup = 7918C821187E2734006D7FE2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7918C880187FC796006D7FE2 /* Products */;
+					ProjectRef = 7918C87F187FC796006D7FE2 /* Yuba.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7918C81F187E2734006D7FE2 /* WeatherLog */,
@@ -259,6 +284,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7918C884187FC796006D7FE2 /* Yuba.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Yuba.framework;
+			remoteRef = 7918C883187FC796006D7FE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7918C81E187E2734006D7FE2 /* Resources */ = {

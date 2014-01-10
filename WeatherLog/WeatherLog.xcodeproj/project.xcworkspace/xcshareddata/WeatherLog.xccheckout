@@ -10,15 +10,23 @@
 	<string>WeatherLog</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>213A0526-9DC4-4214-BC1C-621834BAF596</key>
+		<string>ssh://github.com/sergeylenkov/Yuba.git</string>
 		<key>4DA27708-7932-4F77-8A37-AC64FA75B3FA</key>
 		<string>ssh://github.com/Calrion/WeatherLog.git</string>
+		<key>E48F95DD-3844-4800-92C3-519DD6F6C220</key>
+		<string>ssh://github.com/Calrion/CHCSVParser.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WeatherLog/WeatherLog.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>213A0526-9DC4-4214-BC1C-621834BAF596</key>
+		<string>../../../Library/Yuba</string>
 		<key>4DA27708-7932-4F77-8A37-AC64FA75B3FA</key>
 		<string>../../..</string>
+		<key>E48F95DD-3844-4800-92C3-519DD6F6C220</key>
+		<string>../../../Library/CHCSVParser</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/Calrion/WeatherLog.git</string>
@@ -32,9 +40,25 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E48F95DD-3844-4800-92C3-519DD6F6C220</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CHCSVParser</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4DA27708-7932-4F77-8A37-AC64FA75B3FA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Project</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>213A0526-9DC4-4214-BC1C-621834BAF596</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Yuba</string>
 		</dict>
 	</array>
 </dict>
