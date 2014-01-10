@@ -18,6 +18,7 @@
 		7918C844187E2734006D7FE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918C823187E2734006D7FE2 /* Cocoa.framework */; };
 		7918C84C187E2734006D7FE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7918C84A187E2734006D7FE2 /* InfoPlist.strings */; };
 		7918C84E187E2734006D7FE2 /* WeatherLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918C84D187E2734006D7FE2 /* WeatherLogTests.m */; };
+		7918C87E187FC6D5006D7FE2 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918C87D187FC6D5006D7FE2 /* CHCSVParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7918C84B187E2734006D7FE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7918C84D187E2734006D7FE2 /* WeatherLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherLogTests.m; sourceTree = "<group>"; };
 		7918C858187E4FC6006D7FE2 /* update_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_version.sh; sourceTree = "<group>"; };
+		7918C87C187FC6D5006D7FE2 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		7918C87D187FC6D5006D7FE2 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				7918C857187E4FC6006D7FE2 /* BuildScripts */,
 				7918C829187E2734006D7FE2 /* WeatherLog */,
 				7918C847187E2734006D7FE2 /* WeatherLogTests */,
+				7918C87A187FC6BB006D7FE2 /* Libraries */,
 				7918C822187E2734006D7FE2 /* Frameworks */,
 				7918C821187E2734006D7FE2 /* Products */,
 			);
@@ -163,6 +167,24 @@
 			);
 			name = BuildScripts;
 			path = ../BuildScripts;
+			sourceTree = "<group>";
+		};
+		7918C87A187FC6BB006D7FE2 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7918C87B187FC6D5006D7FE2 /* CHCSVParser */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		7918C87B187FC6D5006D7FE2 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				7918C87C187FC6D5006D7FE2 /* CHCSVParser.h */,
+				7918C87D187FC6D5006D7FE2 /* CHCSVParser.m */,
+			);
+			name = CHCSVParser;
+			path = ../Library/CHCSVParser/CHCSVParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +305,7 @@
 			files = (
 				7918C830187E2734006D7FE2 /* main.m in Sources */,
 				7918C837187E2734006D7FE2 /* CNWAppDelegate.m in Sources */,
+				7918C87E187FC6D5006D7FE2 /* CHCSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +516,7 @@
 				7918C853187E2734006D7FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7918C854187E2734006D7FE2 /* Build configuration list for PBXNativeTarget "WeatherLogTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +525,7 @@
 				7918C856187E2734006D7FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
