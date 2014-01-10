@@ -1,3 +1,6 @@
 [submodule "Library/CHCSVParser"]
 	path = Library/CHCSVParser
 	url = git@github.com:Calrion/CHCSVParser.git
+[submodule "Library/Yuba"]
+	path = Library/Yuba
+	url = git@github.com:Calrion/Yuba.git
