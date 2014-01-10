@@ -1,0 +1,3 @@
+[submodule "Library/CHCSVParser"]
+	path = Library/CHCSVParser
+	url = git@github.com:Calrion/CHCSVParser.git
