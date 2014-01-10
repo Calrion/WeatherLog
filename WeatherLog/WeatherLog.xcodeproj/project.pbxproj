@@ -50,6 +50,7 @@
 		7918C849187E2734006D7FE2 /* WeatherLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherLogTests-Info.plist"; sourceTree = "<group>"; };
 		7918C84B187E2734006D7FE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7918C84D187E2734006D7FE2 /* WeatherLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherLogTests.m; sourceTree = "<group>"; };
+		7918C858187E4FC6006D7FE2 /* update_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_version.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		7918C817187E2733006D7FE2 = {
 			isa = PBXGroup;
 			children = (
+				7918C857187E4FC6006D7FE2 /* BuildScripts */,
 				7918C829187E2734006D7FE2 /* WeatherLog */,
 				7918C847187E2734006D7FE2 /* WeatherLogTests */,
 				7918C822187E2734006D7FE2 /* Frameworks */,
@@ -154,6 +156,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7918C857187E4FC6006D7FE2 /* BuildScripts */ = {
+			isa = PBXGroup;
+			children = (
+				7918C858187E4FC6006D7FE2 /* update_version.sh */,
+			);
+			name = BuildScripts;
+			path = ../BuildScripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +175,7 @@
 				7918C81C187E2734006D7FE2 /* Sources */,
 				7918C81D187E2734006D7FE2 /* Frameworks */,
 				7918C81E187E2734006D7FE2 /* Resources */,
+				7918C859187E4FE3006D7FE2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -247,6 +259,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7918C859187E4FE3006D7FE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SOURCE_ROOT}/../BuildScripts/update_version.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7918C81C187E2734006D7FE2 /* Sources */ = {
